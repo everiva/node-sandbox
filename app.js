@@ -1,2 +1,3 @@
-let b = require('./lesson01/insurance');
-console.log(b.a);
+let policy = require('./lesson01/insurance');
+
+policy.printPolicy();
