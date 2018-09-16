@@ -1,3 +1,3 @@
-let policy = require('./lesson01/insurance');
+let policy = require('./lesson01/hometask');
 
-policy.printPolicy();
+policy.calculatePremium();
