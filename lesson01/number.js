@@ -1,4 +1,4 @@
-module.export = (function () {
+module.exports = (function () {
     let policy = {
         policyHolder: {
             name: 'Alex',
@@ -18,6 +18,6 @@ module.export = (function () {
         }
     }
     return {
-        print: policy()
+        print: policy.print
     } 
 })();
