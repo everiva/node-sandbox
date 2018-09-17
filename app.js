@@ -1,3 +1,2 @@
-let policy = require('./lesson01/hometask');
-
-policy.calculatePremium();
+//let policy = require('./lesson01/number')
+//policy.
