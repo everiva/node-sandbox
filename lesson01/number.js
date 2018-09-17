@@ -17,7 +17,11 @@ module.exports = (function () {
             console.log(output);
         }
     }
+
+    let someThing = 2;
+    
     return {
-        print: policy.print
-    } 
+        print: policy.print,
+        someThing
+    }
 })();
