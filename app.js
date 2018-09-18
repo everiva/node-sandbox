@@ -1,16 +1,24 @@
 let numberModule = require('./lesson01/number')
+let calculateAgeModule = require('./lesson02/age')
+
+function separator() {
+    console.log('');
+    console.log('-------------------');
+    console.log('');
+};
+
+separator();
+
 numberModule.print();
 
+separator();
 
-console.log('');
-console.log('-------------------');
-console.log('');
+calculateAgeModule.calcAge(66);
 
-let calculateAgeModule = require('./lesson02/age')
-calculateAgeModule.calculateAge(5);
-
-console.log('');
-console.log('-------------------');
-console.log('');
+separator();
 
 console.log(numberModule.someThing);
+
+separator();
+
+
