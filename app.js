@@ -13,7 +13,7 @@ numberModule.print();
 
 separator();
 
-calculateAgeModule.calcAge(66);
+calculateAgeModule.calcAge(34);
 
 separator();
 
