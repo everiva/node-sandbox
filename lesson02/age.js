@@ -1,18 +1,27 @@
-module.exports = (function () {
+module.exports = (function () {   
     let coeff = {
         earth: 1,
         mercury: 365 / 88,
         mars: 365 / 687,
-        venus: 365/225
+        venus: 365 / 225
     }
     let calcAge = function (earthAge) {
         let marsAge = Math.floor(earthAge * coeff.mars);
-        let venusAge= Math.floor(earthAge*coeff.venus);
+        let venusAge = Math.floor(earthAge * coeff.venus);
         console.log(`Your age on Earth is ${earthAge}`);
         console.log(`Your age on Mars is ${marsAge}`);
         console.log(`Your age on Venus is ${venusAge}`);
     }
-    return { calcAge }
+    let calcAgeByDateOfBirth = function (dateOfBirth) {
+        // 1. Parse string to Date 
+        // 2. Get year from the date
+        // 3. Subtraction given year from the current one
+
+        let age = new Date().getFullYear() - new Date(dateOfBirth).getFullYear();
+        calcAge(age);
+         
+    }
+    return { calcAgeByDateOfBirth }
 
 })();
 

@@ -13,12 +13,10 @@ numberModule.print();
 
 separator();
 
-calculateAgeModule.calcAge(34);
-
-separator();
-
 console.log(numberModule.someThing);
 
 separator();
+
+calculateAgeModule.calcAgeByDateOfBirth('04.07.1984');
 
 
