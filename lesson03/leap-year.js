@@ -8,22 +8,34 @@ else (it is a leap year)
 */
 
 module.exports = (function () {
-/*
-    1. Get year of date of birth
-    2. Declare boolean variable 'isLeap'
-    3. Using the algorithm on the top determine leapness of the year
-    4. Return to the console the result string
-
-    Hint: division by number is checking with % (remind operator). Result of usage this operator should be equals zero.
-    usage: 
-    var x = 4;
-    var y = 2;
-    var z = x % y;
-
-*/
-    let isLeap = function (dateOfBirth) {
-        console.log(dateOfBirth);
+    let yearBirthIsLeap = function(dateOfBirth) {
+        let isLeap = true
+        let yearBirth = new Date(dateOfBirth).getFullYear()
+        if (yearBirth % 4 == 0) {
+            console.log(isLeap);
+        }
+        return { yearBirthIsLeap }
     }
-    return { isLeap }
 })()
+    //
+    /*
+        1. Get year of date of birth
+        2. Declare boolean variable 'isLeap'
+        3. Using the algorithm on the top determine leapness of the year
+        4. Return to the console the result string
+    
+        Hint: division by number is checking with % (remind operator). Result of usage this operator should be equals zero.
+        usage: 
+        var x = 4;
+        var y = 2;
+        var z = x / y;
+    
+    */
+
+
+    /*let isLeap = function (dateOfBirth) {
+        console.log(dateOfBirth);
+    */
+    //return { isLeap }
+
 

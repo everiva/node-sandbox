@@ -22,6 +22,6 @@ calculateAgeModule.calcAgeByDateOfBirth('04.07.1984');
 
 separator();
 
-checkLeapYear.isLeap('01.01.2011');
+checkLeapYear.yearBirthIsLeap('04.07.1984');
 
 
