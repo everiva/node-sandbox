@@ -8,13 +8,27 @@ else (it is a leap year)
 */
 
 module.exports = (function () {
-    let yearBirthIsLeap = function(dateOfBirth) {
-        let isLeap = true
-        let yearBirth = new Date(dateOfBirth).getFullYear()
-        if (yearBirth % 4 == 0) {
-            console.log(isLeap);
+    let yearBirthIsLeap = function (dateOfBirth) {
+        let isLeap;
+        let yearBirth = new Date(dateOfBirth).getFullYear();
+        if (yearBirth % 4 != 0) {
+            isLeap = false
+        } else if (yearBirth % 100 != 0) {
+            isLeap = true
+        } else if (yearBirth % 400 != 0) {
+            isLeap = true
+        } else {
+            isLeap = true
         }
-        return { yearBirthIsLeap }
+
+        if (isLeap) {
+            console.log(`It is a leap year`)
+        } else { 
+            console.log(`It is a common year`)
+        }
+    }
+    return {
+        yearBirthIsLeap
     }
 })()
     //

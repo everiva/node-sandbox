@@ -8,9 +8,11 @@ module.exports = (function () {
     let calcAge = function (earthAge) {
         let marsAge = Math.floor(earthAge * coeff.mars);
         let venusAge = Math.floor(earthAge * coeff.venus);
+        let mercuryAge = Math.floor(earthAge * coeff.mercury);
         console.log(`Your age on Earth is ${earthAge}`);
         console.log(`Your age on Mars is ${marsAge}`);
         console.log(`Your age on Venus is ${venusAge}`);
+        console.log(`Your age on Mercury is ${mercuryAge}`);
     }
     let calcAgeByDateOfBirth = function (dateOfBirth) {
         // 1. Parse string to Date 

@@ -20,9 +20,12 @@ module.exports = (
                 var output = `Policyholder ${ph.name} is ${ph.age} years old should paid ${policy.calculatePremium()} USD`;
                 console.log(output);
             }
-
         }
-        return policy;
+        
+        // Create random variable in order to transfer it to the outside
+        let dayOfWeek = 'Friday';
+        
+        return {policy, dayOfWeek};
 
     }
 )();

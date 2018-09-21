@@ -14,6 +14,10 @@ numberModule.print();
 
 separator();
 
+console.log(numberModule.dayOfWeek);
+
+separator();
+
 console.log(numberModule.someThing);
 
 separator();
@@ -25,3 +29,4 @@ separator();
 checkLeapYear.yearBirthIsLeap('04.07.1984');
 
 
+    
