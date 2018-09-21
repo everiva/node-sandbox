@@ -1,6 +1,7 @@
 let numberModule = require('./lesson01/number')
 let calculateAgeModule = require('./lesson02/age')
 let checkLeapYear = require('./lesson03/leap-year')
+let lesson04 = require('./lesson04/reverseString')
 
 function separator() {
     console.log('');
@@ -27,6 +28,10 @@ calculateAgeModule.calcAgeByDateOfBirth('04.07.1984');
 separator();
 
 checkLeapYear.yearBirthIsLeap('04.07.1984');
+
+separator();
+
+lesson04.reverseString('add');
 
 
     
