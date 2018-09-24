@@ -39,7 +39,7 @@ lesson04.reversedStringWithBuildInFunctions('hello');
 
 separator();
 
-lesson04.reverseStringRecursivly();
+lesson04.reverseStringRecursivly('apple');
 
 
     
