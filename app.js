@@ -31,7 +31,15 @@ checkLeapYear.yearBirthIsLeap('04.07.1984');
 
 separator();
 
-lesson04.reverseString('add');
+lesson04.reverseStringWithLoop('add');
+
+separator();
+
+lesson04.reversedStringWithBuildInFunctions('hello');
+
+separator();
+
+lesson04.reverseStringRecursivly();
 
 
     

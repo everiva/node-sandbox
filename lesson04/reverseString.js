@@ -5,7 +5,7 @@ There are three ways to reverse string:
 2. Reverse with build-in method for string object -> TBD
 3. Reverse with recursion  -> TBD
 */
-    let reverseString = function (originalString) {
+    let reverseStringWithLoop = (originalString) => {
         /* 
         1. Get original string
         2. Reverse it
@@ -18,6 +18,16 @@ There are three ways to reverse string:
         }
         console.log(reversedString);
     }
-    return { reverseString }
+
+    let reversedStringWithBuildInFunctions = (originalString) => {
+        let result = originalString.split('').reverse().join('');
+        console.log(result)
+    }
+
+    let reverseStringRecursivly = (originalString) => {
+        
+    }
+
+    return { reverseStringWithLoop, reversedStringWithBuildInFunctions, reverseStringRecursivly }
 })()
 
