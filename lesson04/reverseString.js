@@ -24,15 +24,14 @@ There are three ways to reverse string:
         console.log(result)
     }
 
-    let reverseString = (originalString) => {
-        if (originalString.length == 0) return ''
-        return originalString.charAt(originalString.length-1) + reverseString(originalString.substring(0,originalString.length-1))
+    let someString = (string) => {
+        if (string.length == 0) return ''
+        return string.charAt(string.length-1) + someString(string.substring(0, string.length-1))
     }
 
-    let reverseStringRecursivly = (originalString) => {
-        console.log(reverseString(originalString))
+    let recursion = (string) => {
+        console.log(someString(string))
     }
-
-    return { reverseStringWithLoop, reversedStringWithBuildInFunctions, reverseStringRecursivly }
+    return { reverseStringWithLoop, reversedStringWithBuildInFunctions, recursion }
 })()
 
