@@ -43,9 +43,10 @@ module.exports = (() => {
     };
 
     let selectGoods = () => {
-
+        goods.forEach(value=>
+            console.log(`${value.id}. Product: ${value.product} \t Price: ${value.price}`))
     };
 
-    return { editGood, addGood, deleteGood, selectGoods}
+    return { editGood, addGood, deleteGood, selectGoods }
 }
 )()

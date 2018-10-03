@@ -1,10 +1,12 @@
 
-
+/*
 let numberModule = require('./lesson01/number')
 let calculateAgeModule = require('./lesson02/age')
 let checkLeapYear = require('./lesson03/leap-year')
 let lesson04 = require('./lesson04/reverseString')
 let lesson05 = require('./lesson05/arrays')
+
+*/
 let lesson06 = require('./lesson06/lesson06')
 
 function separator() {
@@ -13,6 +15,7 @@ function separator() {
     console.log('');
 };
 
+/*
 separator();
 
 numberModule.print();
@@ -47,6 +50,7 @@ lesson04.recursion('apple');
 
 separator();
 
+
 lesson06.addGoods();
 
 separator();
@@ -54,5 +58,6 @@ separator();
 lesson06.deleteGoods();
 
 separator();
+*/
 
-lesson06.selectByName();
+lesson06.selectGoods();

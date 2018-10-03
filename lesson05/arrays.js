@@ -1,3 +1,5 @@
+
+/*
 module.exports = (function () {
     let goods = [
         {
@@ -102,4 +104,4 @@ module.exports = (function () {
         printGoods
     }
 })()
-
+*/
