@@ -35,3 +35,13 @@ There are three ways to reverse string:
     return { reverseStringWithLoop, reversedStringWithBuildInFunctions, recursion }
 })()
 
+let array = [0,8,2,3]
+console.log(array.length)
+console.log(array[1])
+console.log(array.push('someThing'))
+console.log(array.pop('someThing'))
+
+var fruits = ['Apple', 'Banana'];
+fruits.forEach(function(item, index, array) {
+  console.log(item, index);
+});
