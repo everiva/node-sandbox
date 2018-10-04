@@ -60,4 +60,24 @@ lesson06.deleteGoods();
 separator();
 */
 
+lesson06.addGood('hammer', 12.5);
+separator();
+lesson06.selectGoods();
+separator();
+console.log('Removing \'вапвап\' from goods list');
+lesson06.deleteGoodByName('вапвапв');
+separator();
+console.log('Removing \'cheese\' from goods list');
+lesson06.deleteGoodByName('cheese');
+separator();
+lesson06.selectGoods();
+separator();
+console.log('Removing 1st element from goods list');
+lesson06.deleteGoodById(1);
+separator();
+lesson06.selectGoods();
+separator();
+console.log('Editing price of the 1st element');
+lesson06.editGoodById(1, null, 1000);
+separator();
 lesson06.selectGoods();
