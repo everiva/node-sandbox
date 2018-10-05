@@ -84,12 +84,7 @@ module.exports = (() => {
             console.log(`${value.id}. Product: ${value.product} \t Price: ${value.price}`))
     };
 
-    function refreshIndecies(arr) {
-        for (let i = 0; i<arr.length; i++)
-        {
-            if(arr[i] && arr[i].id) arr[i].id = (i+1)
-        }
-    }
+
 
     return { editGoodById, addGood, deleteGoodsByName, deleteGoodByName, deleteGoodById, selectGoods }
 }
@@ -107,3 +102,7 @@ loops (for ..)
 arithmentic operators (++, --, +=, *= .....)
 
 logical oerations( ==, >, >=, !=, .....)
+
+
+let
+const

@@ -1,4 +1,3 @@
-
 /*
 let numberModule = require('./lesson01/number')
 let calculateAgeModule = require('./lesson02/age')
@@ -6,7 +5,6 @@ let checkLeapYear = require('./lesson03/leap-year')
 let lesson04 = require('./lesson04/reverseString')
 let lesson05 = require('./lesson05/arrays')
 
-*/
 let lesson06 = require('./lesson06/lesson06')
 
 function separator() {
@@ -15,7 +13,6 @@ function separator() {
     console.log('');
 };
 
-/*
 separator();
 
 numberModule.print();
@@ -58,7 +55,6 @@ separator();
 lesson06.deleteGoods();
 
 separator();
-*/
 
 lesson06.addGood('hammer', 12.5);
 separator();
@@ -81,3 +77,39 @@ console.log('Editing price of the 1st element');
 lesson06.editGoodById(1, null, 1000);
 separator();
 lesson06.selectGoods();
+*/
+/*
+debugger;
+
+function addTwo(k) {
+    return k +2 
+}
+
+function addTwoAdnMultiplySix(d) {
+    return addTwo(d) * 6;    
+}
+
+console.log(addTwoAdnMultiplySix(5));*/
+
+// 
+
+let obj = {
+    a: 1,
+    b: 'text'
+}
+
+let objB = {
+    a: 5,
+    f: 54
+}
+
+function foo(o) {
+    if (o.a) o.a += 5;    
+    return o;
+}
+
+console.log(obj.a);
+console.log(objB.a);
+console.log(foo(obj).a);
+console.log(foo(objB).a);
+
