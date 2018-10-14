@@ -52,9 +52,6 @@ lesson06.addGoods();
 
 separator();
 
-lesson06.deleteGoods();
-
-separator();
 
 lesson06.addGood('hammer', 12.5);
 separator();
@@ -93,6 +90,7 @@ console.log(addTwoAdnMultiplySix(5));*/
 
 // 
 
+/*
 let obj = {
     a: 1,
     b: 'text'
@@ -112,4 +110,27 @@ console.log(obj.a);
 console.log(objB.a);
 console.log(foo(obj).a);
 console.log(foo(objB).a);
+
+*/
+
+let hometask06 = require('./lesson06/hometask06')
+
+
+let separator = '------------'
+console.log(separator);
+
+hometask06.deleteBreedOfCat('American Bobtail');
+console.log(separator);
+
+
+
+//hometask06.addBreedOfCat();
+//console.log(separator);
+
+//hometask06.showAllCats();
+//console.log(separator);
+
+
+//hometask06.selectBreedOfCats('American Bobtail')
+
 

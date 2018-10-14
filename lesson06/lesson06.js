@@ -1,10 +1,10 @@
 /*
 1. Список товаров: название, стоимость;
-2. Учетная запись покупателя; // пока не делать
 3. Показать все товары;
 4. Добавление товаров;
 5. Удаление товаров;
 6. Выбор по цене или названию
+7. Учетная запись покупателя; // пока не делать
 */
 
 module.exports = (() => {
@@ -45,7 +45,7 @@ module.exports = (() => {
     };
 
     let deleteGoodsByName = (name) => {
-        // find a goob by Name and since filter must return 
+        // find a good by Name and since filter must return 
         // array as a result but we need only the object element 
         // we are using [0] in order to return first element 
         // from the result array 
@@ -90,6 +90,8 @@ module.exports = (() => {
 }
 )()
 
+/*
+
 objects, arrays
 
 object (understanding in and of operators)
@@ -106,3 +108,5 @@ logical oerations( ==, >, >=, !=, .....)
 
 let
 const
+
+*/
