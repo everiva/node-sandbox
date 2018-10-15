@@ -1,3 +1,7 @@
+/* (()=>{})()
+/* module.exports = (()=>{})()
+
+
 /*
 1. Список пород кошек: название, страна происхождения, рост;
 3. Показать все породы кошек;
@@ -39,12 +43,31 @@ module.exports = (() => {
         },
     ];
 
+    let addBreedOfCat = (nameOfBreed, countryOfBreed) => {
+        breedsOfCats.unshift(
+            {
+                breed: nameOfBreed,
+                country: countryOfBreed
+            }
+        )
+    };
+    let addBreedOfCatMyVariant = () => {
+        breedsOfCats.unshift(
+            {
+                breed: 'Japanese Bobtail',
+                country: 'Japan',
+                height: 444
+            }
+        );
+    };
+    
     let deleteBreedOfCat = (breed) => {
         let filteredArray = breedsOfCats.filter(value => value.breed == breed);
-        if (filteredArray.length > 0){
-        for (let i = 0; i < filteredArray.length; i++) {
-            breedsOfCats.splice(filteredArray[i], 1)
-        }}
+        if (filteredArray.length > 0) {
+            for (let i = 0; i < filteredArray.length; i++) {
+                breedsOfCats.splice(filteredArray[i], 1)
+            }
+        }
     };
 
     let showAllCats = () => {
@@ -52,34 +75,20 @@ module.exports = (() => {
             console.log(`My favourite cats are ${element.breed} from ${element.country}`)
         })
     };
-    let addBreedOfCat = () => {
-        breedsOfCats.unshift(
-            {
-                breed: 'Japanese Bobtail',
-                country: 'Japan',
-                height: 444
-            }
-        )
-    };
 
-    let selectCats = () => {
-        breedsOfCats.forEach(value =>
-            console.log(` Product: ${value.breed} \t Price: ${value.country}`))
-    };
 
     let selectBreedOfCats = (breed) => {
         let filteredArray = breedsOfCats.filter(value => value.breed == breed);
         console.log(filteredArray)
 
-
         // как распарсить элемент???
     };
 
-    let editCats = (breed, country) => {
-
+    let editCats = (breed, country) => { 
+       
     }
 
-    return { showAllCats, addBreedOfCat, deleteBreedOfCat, selectBreedOfCats, selectCats, editCats }
+    return { showAllCats, addBreedOfCat, addBreedOfCatMyVariant, deleteBreedOfCat, selectBreedOfCats, editCats }
 }
 
 )()

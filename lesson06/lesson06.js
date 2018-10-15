@@ -36,14 +36,6 @@ module.exports = (() => {
         }
     ];
 
-    let addGood = (name, price) => {
-        goods.push({
-            id: ++goods.length, //goods[goods.length-1].id+1,
-            product: name,
-            price: price
-        })
-    };
-
     let deleteGoodsByName = (name) => {
         // find a good by Name and since filter must return 
         // array as a result but we need only the object element 
@@ -56,8 +48,19 @@ module.exports = (() => {
                 goods.splice(filteredArray[i].id-(i+1),1)
             }            
         }
-        refreshIndecies(goods);
+         
     };
+    
+    
+    let addGood = (name, price) => {
+        goods.push({
+            id: ++goods.length, //goods[goods.length-1].id+1,
+            product: name,
+            price: price
+        })
+    };
+
+   
 
     let deleteGoodByName = (name)  => {
         let filteredArray = goods.filter(a => a.product == name);
@@ -65,18 +68,18 @@ module.exports = (() => {
             let el = filteredArray[0];
             goods.splice(el.id-1,1)
         }
-        refreshIndecies(goods);
+         
     }
 
     let deleteGoodById = (id) => {
         goods.splice(goods[id-1],1)
-        refreshIndecies(goods);
+         
     };
 
-    let editGoodById = (id, name, price) => {
-        goods[id-1].product = name || goods[id-1].product;
-        goods[id-1].price = price || goods[id-1].price;
-        refreshIndecies(goods);
+    let editGoodById = (name, price) => {
+        goods.product = name || goods.product;
+        goods.price = price || goods.price;
+         
     };
 
     let selectGoods = () => {
@@ -86,7 +89,7 @@ module.exports = (() => {
 
 
 
-    return { editGoodById, addGood, deleteGoodsByName, deleteGoodByName, deleteGoodById, selectGoods }
+    return {addGood, selectGoods, editGoodById, deleteGoodsByName, deleteGoodByName, deleteGoodById }
 }
 )()
 
