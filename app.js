@@ -6,6 +6,7 @@ let lesson04 = require('./lesson04/reverseString')
 let lesson05 = require('./lesson05/arrays')
 let lesson06 = require('./lesson06/lesson06')
 let hometask06 = require('./lesson06/hometask06')
+let lesson07 = require('./lesson07/lesson07')
 
 function separator() {
     console.log('');
@@ -149,71 +150,11 @@ hometask06.editCats('222', 222);
 separator();
 
 hometask06.showAllCats();
-separator();
 
-/*
+hometask06.deleteBreedOfCat('Abyssinian')
 
-// Remove an element from array by name
-hometask06.deleteBreedOfCat('American Bobtail');
-separator();
-
-// Select all elements from array
 hometask06.showAllCats();
-separator();
 
+lesson07.currentDate();
 
-// Select element from array by name
-hometask06.selectBreedOfCats('American Bobtail')
-separator();
-*/
-
-/*
-let breedsOfCats = [
-    {
-        breed: 'Abyssinian',
-        country: 'Ethiopia',
-        height: 111
-
-    },
-    {
-        breed: 'American Bobtail',
-        country: 'United States',
-        height: 115
-
-    },
-    {
-        breed: 'Russian Blue',
-        country: 'Russia',
-        height: 143
-
-    },
-    {
-        breed: 'Maine Coon',
-        country: 'United States',
-        height: 222
-
-    },
-    {
-        breed: 'Korat',
-        country: 'Thailand',
-        height: 333
-    },
-];
-
-
-
-let addBreedOfCatMyVariant1 = breedsOfCats.push(
-    {
-        breed: 'Japanese Bobtail',
-        country: 'Japan',
-        height: 444
-    }
-)
-
-console.log(addBreedOfCatMyVariant1)
-console.log(breedsOfCats)
-
-let filteredArray = breedsOfCats.filter(value => value.breed !== 'Russian Blue');
-console.log(filteredArray)
-*/
-
+lesson07.today(lesson07.currentDate())

@@ -60,22 +60,29 @@ module.exports = (() => {
             }
         );
     };
-    
-    let deleteBreedOfCat = (breed) => {
-        let filteredArray = breedsOfCats.filter(value => value.breed == breed);
-        if (filteredArray.length > 0) {
-            for (let i = 0; i < filteredArray.length; i++) {
-                breedsOfCats.splice(filteredArray[i], 1)
-            }
-        }
-    };
+
 
     let showAllCats = () => {
-        breedsOfCats.forEach(function (element) {
-            console.log(`My favourite cats are ${element.breed} from ${element.country}`)
+        console.log(breedsOfCats)
+    };
+
+    let deleteBreedOfCat = (a) => {
+        breedsOfCats.forEach((value, i) => {
+            if (value.breed == a) {
+                breedsOfCats.splice(i, 1)
+            }
         })
     };
 
+
+
+    /*
+        let showAllCats = () => {
+            breedsOfCats.forEach(function (element) {
+                console.log(`My favourite cats are ${element.breed} from ${element.country}`)
+            })
+        };
+    */
 
     let selectBreedOfCats = (breed) => {
         let filteredArray = breedsOfCats.filter(value => value.breed == breed);
@@ -84,8 +91,8 @@ module.exports = (() => {
         // как распарсить элемент???
     };
 
-    let editCats = (breed, country) => { 
-       
+    let editCats = (breed, country) => {
+
     }
 
     return { showAllCats, addBreedOfCat, addBreedOfCatMyVariant, deleteBreedOfCat, selectBreedOfCats, editCats }

@@ -1,5 +1,5 @@
 module.exports = (
-    function () {
+     () => {
 
         var policy = {
             policyHolder: {
@@ -10,12 +10,12 @@ module.exports = (
                 sumInsured: Math.floor(Math.random() * 100000),
                 tariff: Math.ceil(Math.random() / 1000)
             },
-            calculatePremium: function () {
+            calculatePremium:  () => {
                 var i = policy.coverage;
                 var premium = Math.ceil(i.sumInsured * i.tariff);
                 return premium;
             },
-            printPolicy: function () {
+            printPolicy: () => {
                 var ph = policy.policyHolder;
                 var output = `Policyholder ${ph.name} is ${ph.age} years old should paid ${policy.calculatePremium()} USD`;
                 console.log(output);
